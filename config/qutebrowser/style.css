@@ -1,0 +1,22 @@
+/* Page Font */
+:not(pre):not(code) {
+	font-family: Roboto Condensed;
+}
+pre,code {
+	font-family: Iosevka !important;
+}
+/* Hide Reddit Optin */
+.redesign-beta-optin {
+	display: none;
+}
+/* Duckduckgo Cleanup */
+.search__clear, .search__button, .search--home.has-text .search__clear,
+.frm__input__clear, .ddgsi, .ddgsi-b:before, .ddgsi-a:after,
+.search__button, .search__button--hero,
+.header--aside__item,
+.tag-home {
+	display: none;
+}
+.header__button, .header__button--menu, .header__button:visited, .header__button--menu:visited, .header__button:focus, .header__button--menu:focus, .header__button:hover, .header__button--menu:hover {
+	opacity: 0;
+}
