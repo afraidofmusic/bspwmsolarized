@@ -159,33 +159,33 @@ settings:
   downloads.position:
     global: bottom
   fonts.completion.category:
-    global: bold 13pt Roboto Condensed
+    global: bold 12pt Roboto Condensed
   fonts.completion.entry:
-    global: 13pt Roboto Condensed
+    global: 12pt Roboto Condensed
   fonts.debug_console:
-    global: 13pt Roboto Condensed
+    global: 12pt Roboto Condensed
   fonts.downloads:
-    global: 13pt Roboto Condensed
+    global: 12pt Roboto Condensed
   fonts.hints:
     global: bold 10pt Roboto Condensed
   fonts.keyhint:
-    global: 13pt Roboto Condensed
+    global: 12pt Roboto Condensed
   fonts.messages.error:
-    global: 13pt Roboto Condensed
+    global: 12pt Roboto Condensed
   fonts.messages.info:
-    global: 13pt Roboto Condensed
+    global: 12pt Roboto Condensed
   fonts.messages.warning:
-    global: 13pt Roboto Condensed
+    global: 12pt Roboto Condensed
   fonts.monospace:
     global: '"xos4 Terminus", Terminus, Monospace, "DejaVu Sans Mono", Monaco, "Bitstream
       Vera Sans Mono", "Andale Mono", "Courier New", Courier, "Liberation Mono", monospace,
       Fixed, Consolas, Terminal'
   fonts.prompts:
-    global: 13pt Roboto Condensed
+    global: 12pt Roboto Condensed
   fonts.statusbar:
-    global: 13pt Roboto Condensed
+    global: 12pt Roboto Condensed
   fonts.tabs:
-    global: 13pt Roboto Condensed
+    global: 12pt Roboto Condensed
   fonts.web.family.cursive:
     global: Roboto Condensed
   fonts.web.family.fantasy:
@@ -199,9 +199,9 @@ settings:
   fonts.web.family.standard:
     global: Roboto Condensed
   fonts.web.size.default:
-    global: 16
+    global: 14
   fonts.web.size.default_fixed:
-    global: 16
+    global: 14
   hints.border:
     global: '2px solid #00E3BE23'
   hints.chars:
@@ -211,7 +211,7 @@ settings:
   hints.scatter:
     global: true
   prompt.filebrowser:
-    global: false
+    global: true
   prompt.radius:
     global: 0
   scrolling.smooth:
@@ -227,7 +227,9 @@ settings:
   tabs.background:
     global: true
   tabs.favicons.scale:
-    global: 0.0
+    global: 1.0
+  tabs.favicons.show:
+    global: never
   tabs.indicator.padding:
     global:
       bottom: 2
@@ -251,7 +253,7 @@ settings:
   tabs.title.format:
     global: '{title}'
   tabs.title.format_pinned:
-    global: Pinned - {title}
+    global: Pinned {title}
   url.searchengines:
     global:
       4c: https://4chan.org/{}/catalog
