@@ -1,4 +1,5 @@
-
+## Zsh Title
+source ${HOME}/.zsh.d/zsh-titles/titles.plugin.zsh
 ## Prompt
 PROMPT='%B%F{red}%~%F{white} λ %b%f'
 RPROMPT='%B[%F{blue}%w%f]-[%F{yellow}%T%f]%b'

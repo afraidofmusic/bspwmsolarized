@@ -11,13 +11,13 @@ twobwm.fixed_unkill_color:	#d33682
 
 
 !! Rofi
-rofi.bw:		6
+rofi.bw:		5
 rofi.modi:		drun,run
-rofi.font:		Roboto Condensed 12
-rofi.width:		33
-rofi.lines:		19
-rofi.location:		3
-rofi.line-margin:	0
+rofi.font:		Roboto Condensed 11
+!rofi.width:		33
+!rofi.lines:		17
+!rofi.location:		3
+rofi.line-margin:	5
 rofi.line-padding:	8
 rofi.scroll-method:	1
 rofi.hide-scrollbar:	true
