@@ -24,11 +24,11 @@ tray-position = right
 background = ${colors.base03}
 foreground = ${colors.base0}
 border-top-color = ${colors.base02}
-border-top-size = 6
-height = 40
+border-top-size = 5
+height = 38
 
-font-0 = "Roboto Condensed:sytle=Regular:size=14;3"
-font-1 = "Material Design Icons:style=Regular:size=16;3"
+font-0 = "Roboto Condensed:sytle=Regular:size=13;3"
+font-1 = "Material Design Icons:style=Regular:size=13;3"
 
 padding-right = 4
 module-margin-right = 4
@@ -120,7 +120,7 @@ format-full =  Fully Charged
 
 [module/date]
 type = internal/date
-date = %e %B, %A
+date =  %e %B, %A
 label = %date%
 
 [module/time]
