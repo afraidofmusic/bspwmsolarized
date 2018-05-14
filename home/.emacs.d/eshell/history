@@ -1,0 +1,4 @@
+cd Documents/
+mkdir learnPython
+cd learnPython/
+git init

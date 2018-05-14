@@ -1,0 +1,12 @@
+#!/bin/sh
+norbor='#657b83'
+hilbor='#d33682'
+if [[ ! -f /tmp/border ]]
+then
+	bspc config focused_border_color $hilbor
+	touch /tmp/border
+elif [[ -f /tmp/border ]]
+then
+	bspc config focused_border_color $norbor
+	rm /tmp/border
+fi

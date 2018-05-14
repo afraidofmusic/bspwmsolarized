@@ -1,0 +1,2 @@
+player=mpv --cache 2048 --title streamlink
+player-no-close
