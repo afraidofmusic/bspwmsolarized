@@ -9,6 +9,12 @@
 	pactl set-sink-{volume 0 +5%,volume 0 -5%,mute 0 toggle}
 
 #
+## Playerctl
+#
+{XF86AudioPlay,XF86AudioNext,XF86AudioPrev,XF86AudioStop}
+	playerctl {play-pause,next,previous,stop}
+
+#
 ## Backlight
 #
 XF86MonBrightness{Up,Down} 

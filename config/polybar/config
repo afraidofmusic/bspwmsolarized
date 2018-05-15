@@ -17,28 +17,47 @@ foreground = ${colors.base00}
 border-color = ${colors.base00}
 border-size = 5
 
-override-redirect = true
+wm-restack = bspwm
 bottom = true
-height = 45
-width = 40%
-offset-x = 30%
-offset-y = 20
+height = 41
 
-font-0 = "Roboto Condensed:style=Regular:size=13;4"
-font-1 = "Material Design Icons:style=Regular:size=16;4"
+width = 98.6%
+offset-x = 0.7%
+offset-y = 0.9%
+
+font-0 = "Roboto Condensed:style=Regular:size=13;2"
+font-1 = "Material Design Icons:style=Regular:size=16;3"
 
 padding = 4
 module-margin-right = 4
 
-scroll-up = bspc desktop -f prev.local
-scroll-down = bspc desktop -f next.local
+modules-left = cpu memory network
+modules-right = wireless battery date time
+modules-center = bspwm
 
-modules-left =
-modules-right = 
-modules-center = wireless battery date time
+[module/cpu]
+type = internal/cpu
+label = %percentage%% 
 
-[module/mopidy]
-type = internal/mpd
+[module/memory]
+type = internal/memory
+label = %gb_used% 
+
+[module/network]
+type = internal/network
+interface = wlp2s0
+label-connected = %upspeed% |  %downspeed%
+
+[module/bspwm]
+type = internal/bspwm
+
+label-focused = 
+label-focused-padding = 1
+
+label-occupied = 
+label-occupied-padding = 1
+label-empty = 
+label-empty-padding = 1
 
 [module/wireless]
 type = internal/network
@@ -97,7 +116,7 @@ ramp-capacity-8 = 
 ramp-capacity-9 = 
 ramp-capacity-10 = 
 
-format-full =  Fully Charged
+format-full = <label-full>
 
 [module/date]
 type = internal/date
