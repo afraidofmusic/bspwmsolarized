@@ -12,21 +12,29 @@ configuration {
   font: "Roboto Condensed 11";
   text-color:        @base00;
   background-color:  rgba(0,0,0,0);
-  base03: #002b36;
-  base02: #073642;
-  base01: #586e75;
-  base00: #657b83;
-  base0: #839496;
-  base1: #93a1a1;
-  base2: #eee8d5;
-  base3: #fdf6e3;
+  base03:  #002b36;
+  base02:  #073642;
+  base01:  #586e75;
+  base00:  #657b83;
+  base0:   #839496;
+  base1:   #93a1a1;
+  base2:   #eee8d5;
+  base3:   #fdf6e3;
+  yellow:  #b58900;
+  orange:  #cb4b16;
+  red:     #dc322f;
+  magenta: #d33682;
+  violet:  #6c71c4;
+  blue:    #268bd2;
+  cyan:    #2aa198;
+  green:   #859900;
 }
 
 #window {
   fullscreen:    true;
   location:      west;
   anchor:        west;
-  border:        10px 10px 68px 10px;
+  border:        0px 0px 54px 0px;
   transparency:  "real";
 
   orientation:  horizontal;
@@ -37,8 +45,7 @@ configuration {
 #mainbox {
   expand:            false;
   background-color:  @base3;
-  spacing:           0.8em;
-  border:            5px;
+  border:            7px;
   border-color:      @base00;
   spacing: 0px;
 }
@@ -52,7 +59,7 @@ configuration {
   spacing: 0px;
 }
 #button {
-  padding:    11px;
+  padding:    15px;
   spacing:    0px;
   background-color:  @base0;
   text-color:	     @base3;
@@ -65,7 +72,7 @@ configuration {
 
 #inputbar {
   background-color:  @base0;
-  padding:           15px;
+  padding:           15px 10px 15px 10px;
   spacing:           10px;
 }
 
@@ -86,42 +93,36 @@ configuration {
 
 #element {
   font:             "Roboto Condensed 11";
-  padding:          11px;
+  padding:          10px;
 }
 
 #element selected normal {
   background-color: @base00;
-  text-color:       @base3;
+  text-color:	    @base3;
 }
-
+#element selected active {
+  background-color: @base00;
+  text-color:	    @magenta;
+}
+#element selected urgent {
+  background-color: @base00;
+  text-color:	    @red;
+}
 #element normal active {
-  background-color: @base00;
-  text-color:       @base3;
+  text-color:	    @magenta;
 }
-
 #element normal urgent {
-  background-color: @base00;
-  text-color:       @base3;
+  text-color:	    @red;
 }
-
 #element alternate normal {
   background-color: @base2;
 }
-
 #element alternate active {
-  text-color:       @base3;
+  background-color: @base2;
 }
-
 #element alternate urgent {
-  background-color: OrangeRed;
-}
-
-#element selected active {
-  background-color:  @base3;
-}
-
-#element selected urgent {
-  background-color:  DarkOrange;
+  background-color: @base2;
+  text-color:	    @red;
 }
 
 /* vim:ft=css */

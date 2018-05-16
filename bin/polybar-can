@@ -3,7 +3,7 @@
 if pgrep -x "polybar" > /dev/null
 then
 	killall polybar
-	bspc config bottom_padding 0
+	bspc config bottom_padding 7
 else
 	polybar can
 fi

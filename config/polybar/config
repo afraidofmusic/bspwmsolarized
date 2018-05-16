@@ -14,21 +14,20 @@ base3  = #fdf6e3
 background = ${colors.base3}
 foreground = ${colors.base00}
 
-border-color = ${colors.base00}
-border-size = 5
+border-top-color = ${colors.base00}
+border-top-size = 7
 
 wm-restack = bspwm
 bottom = true
-height = 38
+height = 54
 
-width = 98.5%
-offset-x = 0.7%
-offset-y = 1.3%
+width = 100%
 
-font-0 = "Roboto Condensed:style=Regular:size=13;3"
-font-1 = "Material Design Icons:style=Regular:size=16;4"
+font-0 = "Roboto Condensed:style=Regular:size=13;2"
+font-1 = "Material Design Icons:style=Regular:size=16;3"
+font-2 = "Material Design Icons:style=Regular:size=20;5"
 
-padding = 4
+padding = 5
 module-margin-right = 4
 
 modules-left = cpu memory network
@@ -52,14 +51,18 @@ label-connected = %upspeed:8:8% |  %downspeed:8:8%
 type = internal/bspwm
 
 label-focused = 
+label-focused-font = 3
 label-focused-padding = 1
 
 label-occupied = 
+label-occupied-font = 3
 label-occupied-padding = 1
 label-empty = 
+label-empty-font = 3
 label-empty-padding = 1
 
 label-urgent = 
+label-urgent-font = 3
 label-urgent-padding = 1
 
 [module/wireless]
