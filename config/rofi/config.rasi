@@ -1,0 +1,128 @@
+/* ================================================= */
+/*  Rofi config by lans9831                          */
+/*  Suggested icon pack: Papirus                     */
+/* ================================================= */
+
+configuration {
+  disable-history: true;
+  modi: "drun,run,window";
+  sidebar-mode: true;
+}
+* {
+  font: "Roboto Condensed 11";
+  text-color:        @base00;
+  background-color:  rgba(0,0,0,0);
+  base03: #002b36;
+  base02: #073642;
+  base01: #586e75;
+  base00: #657b83;
+  base0: #839496;
+  base1: #93a1a1;
+  base2: #eee8d5;
+  base3: #fdf6e3;
+}
+
+#window {
+  fullscreen:    true;
+  location:      west;
+  anchor:        west;
+  border:        10px 10px 68px 10px;
+  transparency:  "real";
+
+  orientation:  horizontal;
+  children:     [mainbox, dummy];
+}
+
+/* First container */
+#mainbox {
+  expand:            false;
+  background-color:  @base3;
+  spacing:           0.8em;
+  border:            5px;
+  border-color:      @base00;
+  spacing: 0px;
+}
+
+/* Dummy container */
+#dummy { 
+  expand: true; 
+}
+
+#sidebar {
+  spacing: 0px;
+}
+#button {
+  padding:    11px;
+  spacing:    0px;
+  background-color:  @base0;
+  text-color:	     @base3;
+}
+#button selected {
+  font:              "Roboto Condensed 11";
+  background-color:  @base00;
+  text-color:	     @base3;
+}
+
+#inputbar {
+  background-color:  @base0;
+  padding:           15px;
+  spacing:           10px;
+}
+
+#prompt {
+  font: "Roboto Condensed Bold 11";
+  text-color: @base3;
+}
+
+#entry {
+  font: "Roboto Condensed 11";
+  text-color: @base3;
+  width: 18em;
+}
+
+#listview {
+  spacing: 0px;
+}
+
+#element {
+  font:             "Roboto Condensed 11";
+  padding:          11px;
+}
+
+#element selected normal {
+  background-color: @base00;
+  text-color:       @base3;
+}
+
+#element normal active {
+  background-color: @base00;
+  text-color:       @base3;
+}
+
+#element normal urgent {
+  background-color: @base00;
+  text-color:       @base3;
+}
+
+#element alternate normal {
+  background-color: @base2;
+}
+
+#element alternate active {
+  text-color:       @base3;
+}
+
+#element alternate urgent {
+  background-color: OrangeRed;
+}
+
+#element selected active {
+  background-color:  @base3;
+}
+
+#element selected urgent {
+  background-color:  DarkOrange;
+}
+
+/* vim:ft=css */
+

@@ -2,10 +2,10 @@
 xrdb ~/.Xresources
 export LC_ALL="en_US.UTF-8"
 
-compton -b &
 dunst &
-feh --bg-fill ${HOME}/.startup/rose-erkul.jpg &
+. ${HOME}/.fehbg &
 polybar can &
 redshift &
+xcompmgr &
 xsetroot -cursor_name left_ptr &
 exec bspwm

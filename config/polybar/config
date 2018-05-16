@@ -19,14 +19,14 @@ border-size = 5
 
 wm-restack = bspwm
 bottom = true
-height = 41
+height = 38
 
-width = 98.6%
+width = 98.5%
 offset-x = 0.7%
-offset-y = 0.9%
+offset-y = 1.3%
 
-font-0 = "Roboto Condensed:style=Regular:size=13;2"
-font-1 = "Material Design Icons:style=Regular:size=16;3"
+font-0 = "Roboto Condensed:style=Regular:size=13;3"
+font-1 = "Material Design Icons:style=Regular:size=16;4"
 
 padding = 4
 module-margin-right = 4
@@ -37,16 +37,16 @@ modules-center = bspwm
 
 [module/cpu]
 type = internal/cpu
-label = %percentage%% 
+label = %percentage:3:3%% 
 
 [module/memory]
 type = internal/memory
-label = %gb_used% 
+label = %gb_used:7:7% 
 
 [module/network]
 type = internal/network
 interface = wlp2s0
-label-connected = %upspeed% |  %downspeed%
+label-connected = %upspeed:8:8% |  %downspeed:8:8%
 
 [module/bspwm]
 type = internal/bspwm
@@ -58,6 +58,9 @@ label-occupied = 
 label-occupied-padding = 1
 label-empty = 
 label-empty-padding = 1
+
+label-urgent = 
+label-urgent-padding = 1
 
 [module/wireless]
 type = internal/network
