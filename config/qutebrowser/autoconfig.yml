@@ -218,7 +218,7 @@ settings:
   fonts.web.family.standard:
     global: Roboto Condensed
   fonts.web.size.default:
-    global: 15
+    global: 16
   fonts.web.size.default_fixed:
     global: 15
   hints.border:
@@ -236,7 +236,7 @@ settings:
   scrolling.smooth:
     global: false
   statusbar.hide:
-    global: false
+    global: true
   statusbar.padding:
     global:
       bottom: 10
@@ -290,4 +290,4 @@ settings:
       r: https://reddit.com/r/{}
       tpb: https://thepiratebay.org/search/{}
   url.start_pages:
-    global: ~/.config/qutebrowser/start/start.html
+    global: https://start.duckduckgo.com

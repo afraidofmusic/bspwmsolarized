@@ -1,6 +1,6 @@
 /* Page Font */
 :not(pre):not(code) {
-	font-family: Roboto Condensed;
+	font-family: Roboto Condensed !important;
 }
 pre,code {
 	font-family: Iosevka !important;

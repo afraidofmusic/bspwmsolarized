@@ -2,6 +2,7 @@
 
 <img src="https://github.com/afraidofmusic/bspwmsolarized/blob/master/scrot-1.png?raw=true">
 <img src="https://github.com/afraidofmusic/bspwmsolarized/blob/master/scrot-2.png?raw=true">
+<img src="https://github.com/afraidofmusic/bspwmsolarized/blob/master/scrot-3.png?raw=true">
 
 * Alacritty
 * Bspwm
