@@ -67,3 +67,15 @@ a {
 a:hover {
   opacity: 0.8;
 }
+
+input {
+  width: 600px;
+  font-size: 1.2em;
+  background: none;
+  border: none;
+  color: #657b83;
+  outline: none;
+}
+::placeholder {
+  opacity: 0.8;
+}
