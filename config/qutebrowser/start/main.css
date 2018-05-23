@@ -76,6 +76,3 @@ input {
   color: #657b83;
   outline: none;
 }
-::placeholder {
-  opacity: 0.8;
-}
