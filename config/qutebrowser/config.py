@@ -82,18 +82,18 @@ c.colors.tabs.selected.even.fg = solarized['base2']
 c.colors.tabs.selected.odd.bg = solarized['base00']
 c.colors.tabs.selected.odd.fg = solarized['base2']
 ### Fonts
-c.fonts.completion.category = 'bold 12pt Roboto Condensed'
-c.fonts.completion.entry = '12pt Roboto Condensed'
-c.fonts.debug_console = '12pt Roboto Condensed'
-c.fonts.downloads = '12pt Roboto Condensed'
-c.fonts.keyhint = '12pt Roboto Condensed'
-c.fonts.messages.error = '12pt Roboto Condensed'
-c.fonts.messages.info = '12pt Roboto Condensed'
-c.fonts.messages.warning = '12pt Roboto Condensed'
+c.fonts.completion.category = 'bold 11pt Roboto Condensed'
+c.fonts.completion.entry = '11pt Roboto Condensed'
+c.fonts.debug_console = '11pt Roboto Condensed'
+c.fonts.downloads = '11pt Roboto Condensed'
+c.fonts.keyhint = '11pt Roboto Condensed'
+c.fonts.messages.error = '11pt Roboto Condensed'
+c.fonts.messages.info = '11pt Roboto Condensed'
+c.fonts.messages.warning = '11pt Roboto Condensed'
 c.fonts.monospace = 'Iosevka'
-c.fonts.prompts = '12pt Roboto Condensed'
-c.fonts.statusbar = '12pt Roboto Condensed'
-c.fonts.tabs = '12pt Roboto Condensed'
+c.fonts.prompts = '11pt Roboto Condensed'
+c.fonts.statusbar = '11pt Roboto Condensed'
+c.fonts.tabs = '11pt Roboto Condensed'
 c.fonts.web.family.cursive = 'Roboto Condensed'
 c.fonts.web.family.fantasy = 'Roboto Condensed'
 c.fonts.web.family.fixed = 'Iosevka'
@@ -109,21 +109,21 @@ c.hints.mode = 'letter'
 c.hints.scatter = True
 ### Prompt
 c.prompt.filebrowser = True
-c.prompt.radius = 0
+c.prompt.radius = 5
 ### Statusbar
-c.statusbar.hide = False
+c.statusbar.hide = True
 c.statusbar.padding = {'bottom': 10, 'left': 10, 'right': 10, 'top': 10}
 c.statusbar.widgets = ['keypress', 'progress', 'url']
 ### Tabs
 c.tabs.background = True
 c.tabs.favicons.show = 'pinned'
 c.tabs.indicator.width = 0
-c.tabs.padding = {'bottom': 10, 'left': 20, 'right': 20, 'top': 10}
-c.tabs.title.format_pinned = '{index}'
+c.tabs.padding = {'bottom': 10, 'left': 14, 'right': 10, 'top': 10}
+c.tabs.title.format_pinned = ''
 c.tabs.position = 'top'
-c.tabs.show = 'always'
 c.tabs.title.alignment = 'center'
 c.tabs.title.format = '{title}'
+c.tabs.wrap = False
 ### Downloads
 c.downloads.position = 'bottom'
 ### Completion
@@ -131,6 +131,8 @@ c.completion.cmd_history_max_items = 0
 c.completion.height = '33%'
 c.completion.shrink = True
 c.completion.web_history_max_items = 0
+### Window
+c.window.title_format = "{private}{title} {perc}"
 ### Search Engines
 c.url.searchengines = {'DEFAULT': 'https://duckduckgo.com/?q={}',
                        '4c': 'https://4chan.org/{}/catalog',
@@ -147,7 +149,7 @@ c.url.searchengines = {'DEFAULT': 'https://duckduckgo.com/?q={}',
 ### Misc
 c.confirm_quit = ['multiple-tabs', 'downloads']
 c.content.user_stylesheets = ['~/.config/qutebrowser/style.css']
-c.editor.command = ['alacritty', '-e', 'vim', '{file}']
+c.editor.command = ['st', '-e', 'vim', '{file}']
 c.url.default_page = '~/.config/qutebrowser/start/start.html'
 c.url.start_pages = '~/.config/qutebrowser/start/start.html'
 ### Keybinds
@@ -164,11 +166,10 @@ config.bind('zz', 'config-cycle statusbar.hide true false')
 
 ### Side Tabs
 c.tabs.favicons.show = 'always'
-c.tabs.padding = {"bottom": 10, "left": 13, "right": 8, "top": 10}
 c.tabs.position = 'left'
 c.tabs.title.format =''
+c.tabs.width = 46
 c.tabs.title.format_pinned = ''
-c.tabs.width = 45
 c.colors.tabs.bar.bg = solarized['base0']
 c.colors.tabs.even.bg = solarized['base0']
 c.colors.tabs.odd.bg = solarized['base0']
